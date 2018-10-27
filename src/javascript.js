@@ -5,6 +5,5 @@
 
 
 var num = 1;
-
 var new_num = num++;
 console.log(new_num)
