@@ -51,3 +51,9 @@
 // cities.pop("skp")
 
 // console.log(cities[2]);
+
+//insert the element any where in array
+
+// var names = ["usman", "khan", "haider", "salman"];
+// names.splice("SAIM");
+// console.log(names[0]);
