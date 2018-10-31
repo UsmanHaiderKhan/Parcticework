@@ -33,14 +33,21 @@
 //   alert(x+""+"Your Choice is too much bad");
 // }
 
-var weight = 70;
-var name = "usman";
-var height = 6;
-var lastname = "khan"
-var gender = "Male"
+// var weight = 70;
+// var name = "usman";
+// var height = 6;
+// var lastname = "khan"
+// var gender = "Male"
 
-if (weight < 70 || gender === "Male" && name === "usman" && lastname === "khan" && height === 6) {
-    alert("Usman haider khan properties");
-} else {
-    alert('Khan Khan khan');
-}
+// if (weight < 70 || gender === "Male" && name === "usman" && lastname === "khan" && height === 6) {
+//     alert("Usman haider khan properties");
+// } else {
+//     alert('Khan Khan khan');
+// }
+
+
+// var cities = ["usman", "khan", 2, "true"]
+// cities.push("skp");
+// cities.pop("skp")
+
+// console.log(cities[2]);
