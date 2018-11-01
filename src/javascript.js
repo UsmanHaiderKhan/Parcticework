@@ -60,3 +60,9 @@
 // var names = ["usman", "khan", "haider", "salman"];
 // names.splice("SAIM");
 // console.log(names[0]);
+
+//finding the lenght of array
+
+// var city = ["usman", "khan", "haider"];
+// var lenght = city.length;
+// console.log(lenght);
