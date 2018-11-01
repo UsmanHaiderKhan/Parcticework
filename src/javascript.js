@@ -66,3 +66,17 @@
 // var city = ["usman", "khan", "haider"];
 // var lenght = city.length;
 // console.log(lenght);
+
+//Copy Array Element
+
+// var firstname = ["usman", "khan", "salman", "ahmad"];
+// var lname = ["khan", "haider", "zzz", "babu"];
+
+// var fullname = [];
+
+// for (var i = 0; i < firstname.length; i++) {
+//     for (var j = 0; j < lname.length; j++) {
+//         fullname.push(firstname[i] + " " + lname[j]);
+//     }
+// }
+// console.log(fullname[4]);
