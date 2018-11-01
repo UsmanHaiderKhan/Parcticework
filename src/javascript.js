@@ -49,8 +49,11 @@
 // var cities = ["usman", "khan", 2, "true"]
 // cities.push("skp");
 // cities.pop("skp")
-
 // console.log(cities[2]);
+
+// var arrays = ["usman", "haider", "khan"];
+// arrays.unshift("salman", "ahmad");
+// console.log(arrays[1])
 
 //insert the element any where in array
 
