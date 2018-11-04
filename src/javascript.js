@@ -80,3 +80,115 @@
 //     }
 // }
 // console.log(fullname[4]);
+
+//
+
+// var name = [1, 3, 4, 5, 5, "usman"];
+// console.log(typeof name);
+
+
+//OBJECTS
+
+// var obj = {
+//     name: "usman"
+// };
+
+//FUNCTION it is block of code we can run any time for multiple times
+
+// function Usman() {
+//     console.log("hello usman");
+// }
+
+// var usman = function () {
+//     console.log("Calling by obj");
+// };
+// console.log(typeof usman);
+// Usman();
+// usman()
+
+//we can reassign your function
+// var khan = usman;
+// khan();
+
+//RETURING A FUNCTION
+
+// function calculator(number, number1) {
+//     return number + number1;
+// };
+
+// var another = calculator;
+// console.log(another(12, 12));
+
+
+// var condition = -1;
+// var anotherCondition = false;
+// if (condition) {
+//     console.log("Executed...!");
+// } else if (anotherCondition) {
+//     console.log("Still Also Excuted");
+// } else {
+//     console.log("Not Wrong this thing");
+// }
+
+
+// console.log(anotherCondition == true);
+
+
+
+//Switch Control Stucter
+
+// var luckyNumber = 8;
+// switch (luckyNumber) {
+//     case 1:
+//         console.log("your lucky number is 3");
+//         break;
+//     case 7:
+//         console.log("Your Lucky Number is 7");
+//         break;
+//     default:
+//         console.log("Sorry ... WE Can't find your match");
+// }
+
+//For Looop for Arrays
+
+// var name = ["usman", "salman", "haider", "khan"];
+// for (var i = 0; i < name.length; i++) {
+//     console.log(name[i]);
+// }
+
+//While Loop
+
+// var number = 5;
+// while (number < 8) {
+//     console.log(number);
+//     number++;
+// }
+
+
+//floating problem with  mulitplication
+
+// var a = 1.3;
+// var b = 2.2;
+// console.log(a * b);
+
+// if ((a * b).toFixed(2) == 2.86) {
+//     console.log("Love With Some One ");
+
+// } else {
+//     console.log("Some on Love You Sceretly ");
+// }
+
+
+//Ternary Operator
+
+a = 5;
+b = 5;
+//if we do same thing as
+
+console.log(a == b ? "EQUALs" : "NOT EQUALS");
+// if (a == b) {
+//     console.log("YES  EQUAL");
+
+// } else {
+//     console.log("NOT EQUAL");
+// }
