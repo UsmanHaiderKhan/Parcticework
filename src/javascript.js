@@ -181,14 +181,23 @@
 
 //Ternary Operator
 
-a = 5;
-b = 5;
+// a = 5;
+// b = 5;
 //if we do same thing as
 
-console.log(a == b ? "EQUALs" : "NOT EQUALS");
+//console.log(a == b ? "EQUALs" : "NOT EQUALS");
 // if (a == b) {
 //     console.log("YES  EQUAL");
 
 // } else {
 //     console.log("NOT EQUAL");
 // }
+//for each method in js
+
+// var array = ["usman", "haider", "khan"];
+// array.forEach(function (element) {
+//     console.log(element);
+// });
+//Method index of
+var index = ["usman", 1, 2, "khan"];
+console.log(index.indexOf("usman"));
