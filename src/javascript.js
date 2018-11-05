@@ -198,6 +198,20 @@
 // array.forEach(function (element) {
 //     console.log(element);
 // });
+
 //Method index of
-var index = ["usman", 1, 2, "khan"];
-console.log(index.indexOf("usman"));
+// var index = ["usman", 1, 2, "khan"];
+// console.log(index.indexOf("usman"));
+
+//Array Splicing 
+// var array=[1,2,3,4,5,6,7,8];
+// var newArray=array.splice(2,2);
+// console.log(array);
+// console.log(newArray);
+
+//Array Sliciing
+
+// var array = [1, 2, 3, 4, 5, 6, 7, 8];
+// var newArray = array.slice(2);
+// console.log(array);
+// console.log(newArray);
