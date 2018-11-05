@@ -227,3 +227,17 @@
 // console.log(array.map(function (value) {
 //     return value * 2;
 // }))
+
+//Reverse the Array Elements
+
+// var array = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// console.log(array.reverse());
+
+
+//Here is Methods to cancat and join
+
+// var array = [1, 2, 3, 4, 5, 6, 7, 8];
+// var newarray = ['usman', "khan"];
+// console.log(array.concat(', ' + newarray));
+// console.log(array.join(', ' + newarray));
