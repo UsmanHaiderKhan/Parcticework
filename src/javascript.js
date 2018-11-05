@@ -241,3 +241,16 @@
 // var newarray = ['usman', "khan"];
 // console.log(array.concat(', ' + newarray));
 // console.log(array.join(', ' + newarray));
+
+
+//There is Reduce function
+
+
+// var array = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// console.log(array.reduce(function (total, value) {
+//     console.log('Total :' + total + ', Value:' + value);
+//     return total + value;
+
+// }))
+// console.log(array);
