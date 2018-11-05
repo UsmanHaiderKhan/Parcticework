@@ -261,4 +261,18 @@
 
 
 
-//
+//Here we Disscuss the basic of the obkective
+
+var person = {
+    name: "usman khan",
+    age: 21,
+    details: {
+        hobbies: ["Cricket", "Internrt Surffing"],
+        Location: "Pakistan ,Lahore"
+
+    },
+    myLocal: function () {
+        console.log("My Name is " + this.name + " and my age is " + this.age);
+    }
+}
+person.myLocal();
