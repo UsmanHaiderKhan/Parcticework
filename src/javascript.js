@@ -246,7 +246,7 @@
 //There is Reduce function
 
 
-// var array = [1, 2, 3, 4, 5, 6, 7, 8];
+//var array = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // console.log(array.reduce(function (total, value) {
 //     console.log('Total :' + total + ', Value:' + value);
@@ -254,3 +254,11 @@
 
 // }))
 // console.log(array);
+
+// array.forEach(function (item, index, array) {
+//     console.log(item, index);
+// });
+
+
+
+//
