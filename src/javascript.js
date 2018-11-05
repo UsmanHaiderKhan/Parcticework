@@ -263,16 +263,48 @@
 
 //Here we Disscuss the basic of the obkective
 
-var person = {
-    name: "usman khan",
-    age: 21,
-    details: {
-        hobbies: ["Cricket", "Internrt Surffing"],
-        Location: "Pakistan ,Lahore"
+// var person = {
+//     name: "usman khan",
+//     age: 21,
+//     details: {
+//         hobbies: ["Cricket", "Internrt Surffing"],
+//         Location: "Pakistan ,Lahore"
 
-    },
-    myLocal: function () {
-        console.log("My Name is " + this.name + " and my age is " + this.age);
-    }
-}
-person.myLocal();
+//     },
+//     myLocal: function () {
+//         console.log("My Name is " + this.name + " and my age is " + this.age);
+//     }
+// }
+// person.myLocal();
+
+//Another Way to creating the OBJECT
+
+// var anotherObj = new Object();
+// anotherObj.name = "khan";
+// anotherObj.age = 24;
+// console.log(anotherObj);
+
+//For Example we Have the two same object and we want to compare them the result will be False 
+//in Actual it compare the location not actual values
+
+// var person = {
+//     name: "usman",
+//     age: 23,
+// }
+// var person1 = {
+//     name: "usman",
+//     age: 23,
+// }
+// console.log(person == person1);
+
+
+//Creating the prototype of the object of the prevoiuse object
+
+var person = {
+    name: "usman",
+    age: 23,
+};
+var anotherPerson = Object.create(person);
+anotherPerson.name = "usman haider khan";
+
+console.log(anotherPerson.age);
