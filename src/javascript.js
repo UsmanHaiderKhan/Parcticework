@@ -315,11 +315,13 @@
 //     name: "usman",
 //     age: 21
 // };
-// var obj = new Object(person);
-// var another = new Object(person);
+// var obj = Object.create(person);
+// var another = Object.create(person);
 // another.usman = 'usman khan';
 // console.log(person.name + " " + another.usman);
-
+// console.log(another.__proto__ == person);
+// console.log(another.__proto__.__proto__ == Object.prototype);
+// console.log(Object.getPrototypeOf(another) == person);
 
 // console.log(person.__proto__);
 
@@ -328,3 +330,78 @@
 // }
 // person.gret();
 // console.log(person.toString());
+
+//Constructer Function
+
+// function Person() {}
+
+// var person = new Person();
+// person.name = "usman khan";
+// console.log(person.__proto__ == Person.prototype);
+// console.log(person instanceof Person);
+
+//Constructor with Perametter
+
+// function permy(name, age) {
+//     this.name = name;
+//     this.age = age;
+
+// }
+// var person = new permy('usman haider khan', 21);
+// var khanni = new permy('Salman khan', 14);
+// console.log(person);
+// console.log(khanni);
+// console.log(permy instanceof Object);
+
+//here we bind or call the function
+
+// function fn(message) {
+//     console.log(message + this);
+// };
+// var obj = {
+//     obfn: fn
+// };
+// var person = {
+//     name: 'usman',
+// };
+//here we nedd to Extra Parentheses 
+//obj.obfn.bind(person, 'Hello')();
+//here did not need to do any Extra Prenthises
+//obj.obfn.call(person, 'Hello');
+// Here we need to put Square Brackets 
+//obj.obfn.call(person, ['Hello']);
+
+//Use Full Example
+
+// var Account = {
+//     cash: 12000,
+//     _name: 'Default',
+
+//     withdraw: function (amount) {
+//         this.cash -= amount;
+//         console.log("WidthDrew Amount: " + amount + " new Cash Reserve :" + this.cash);
+//     }
+// };
+// Object.defineProperty(Account, 'deposit', {
+//     value: function (amount) {
+//         this.cash += amount;
+//     },
+//     writable: true
+// });
+// Object.defineProperty(Account, 'name', {
+//     value: 'ID-00032',
+//     writable: true //Define propertise bydefault "READONLY"
+// });
+// Object.defineProperty(Account, 'name', {
+//     get: function () {
+//         return this._name;
+//     },
+//     set: function (name) {
+//         this._name = name;
+//     }
+// });
+// console.log(Account.name);
+// Account.name = 'ID-3002';
+// console.log(Account.name);
+// Account.deposit(3000);
+// Account.withdraw(1000);
