@@ -408,24 +408,24 @@
 
 //Built Function
 
-var person = {
-    name: "usman haider khan",
-    age: 21,
-    saim: function () {
-        console.log("Hello Mt Dear :" + this.name);
+// var person = {
+//     name: "usman haider khan",
+//     age: 21,
+//     saim: function () {
+//         console.log("Hello Mt Dear :" + this.name);
 
-    }
-}
-for (var fields in person) {
-    console.log(fields);
-}
+//     }
+// }
+// for (var fields in person) {
+//     console.log(fields);
+// }
 
-console.log('name' in person);
+// console.log('name' in person);
 
 
 
 // var fun = ["usman", "khan", "salman"];
 
 // for (var i = 0; i < fun.length; i++) {
-//     console.log(fun[i]);
+//     console.log(fun[i].toString);
 // }
