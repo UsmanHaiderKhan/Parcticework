@@ -300,11 +300,31 @@
 
 //Creating the prototype of the object of the prevoiuse object
 
-var person = {
-    name: "usman",
-    age: 23,
-};
-var anotherPerson = Object.create(person);
-anotherPerson.name = "usman haider khan";
+// var person = {
+//     name: "usman",
+//     age: 23,
+// };
+// var anotherPerson = Object.create(person);
+// anotherPerson.name = "usman haider khan";
 
-console.log(anotherPerson.age);
+// console.log(anotherPerson.age);
+
+//Intro of Prototype
+
+// var person = {
+//     name: "usman",
+//     age: 21
+// };
+// var obj = new Object(person);
+// var another = new Object(person);
+// another.usman = 'usman khan';
+// console.log(person.name + " " + another.usman);
+
+
+// console.log(person.__proto__);
+
+// Object.prototype.gret = function () {
+//     console.log("any One is Here");
+// }
+// person.gret();
+// console.log(person.toString());
