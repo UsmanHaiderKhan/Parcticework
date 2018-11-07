@@ -519,12 +519,26 @@
 
 //REGX in Java Script
 
-var string = "abs";
-var patt = /abs/;
-console.log(string.match(patt));
+// var string = "abs";
+// var patt = /abs/;
+// console.log(string.match(patt));
 
 
 // Date and Time in java script 
 
-var time = Date.now();
-console.log(time);
+// var time = Date.now();
+// console.log(time);
+
+// Window Built in Methods
+// console.log(window.innerWidth);
+// console.log(innerWidth);
+//Persistance
+// localStorage.setItem('key2',100);
+// console.log(localStorage.getItem('key2'));
+//Non Persistance
+
+// sessionStorage.setItem('key2',100);
+// console.log(sessionStorage.getItem('key2'));
+
+// console.log(window.location);
+//window.open("https://www.google.com/");
