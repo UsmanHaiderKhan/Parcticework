@@ -431,10 +431,33 @@
 // }
 
 //Try Catch Block avoid the Application from crashing
-try {
-    test();
-} catch (error) {
-    console.log(error);
-} finally {
-    console.log("Finally i got this ");
-}
+// try {
+//     test();
+// } catch (error) {
+//     console.log(error);
+// } finally {
+//     console.log("Finally i got this ");
+// }
+
+
+/********  Now Start Functions in JavaScript ********/
+
+
+// function Generate(input) {
+//     var number = input;
+//     return function () {
+//         return number * 2;
+//     }
+// }
+// var calc = Generate(1000);
+// console.log(calc);
+
+/* Getting input through prompt from user  */
+
+// var prop = prompt("Enter Value");
+
+// (function (prop) {
+//     var number = prop;
+//     console.log(number.toString());
+
+// })(prop);
