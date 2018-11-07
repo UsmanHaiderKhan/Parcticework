@@ -429,3 +429,12 @@
 // for (var i = 0; i < fun.length; i++) {
 //     console.log(fun[i].toString);
 // }
+
+//Try Catch Block avoid the Application from crashing
+try {
+    test();
+} catch (error) {
+    console.log(error);
+} finally {
+    console.log("Finally i got this ");
+}
