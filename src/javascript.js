@@ -496,3 +496,35 @@
 
 //console.log(b.toString());
 //console.log(parseInt(a,16));
+
+
+//String Trandformation
+
+// var string = "My Name is Khan";
+// console.log(string.length);
+// it Work likes an array
+// console.log(string[5]);
+
+
+// var v = 2.3;
+// var rand = Math.floor(Math.random() * 3 + 1) + 1;
+//console.log(rand);
+//    console.log(Math.ceil(v));
+//    console.log(Math.floor(v))
+//    console.log(Math.exp(v));
+//    console.log(Math.abs(v));
+// console.log(Math.max(10,1000,100));
+//console.log(Math.min(10,1000,100));
+//console.log(Math.random(1,10));
+
+//REGX in Java Script
+
+var string = "abs";
+var patt = /abs/;
+console.log(string.match(patt));
+
+
+// Date and Time in java script 
+
+var time = Date.now();
+console.log(time);
