@@ -461,3 +461,38 @@
 //     console.log(number.toString());
 
 // })(prop);
+
+// function Arguments
+
+// function mesaage(message) {
+//     console.log(message);
+//     console.log(arguments);
+// }
+// mesaage("hello !", 10, 120);
+
+
+
+// java script built in functions
+
+
+// var interval=setInterval(function(){
+//   console.log("Goes Inside Me");
+// },300);
+
+// setTimeout(function()
+//           {
+//   clearInterval(interval);
+// },1000);
+
+//Transforming Formate
+
+
+// var a = 'EB5';
+// var b = 10;
+
+// var float = 12.4;
+
+// console.log(float.toFixed(2));//toFixed(2) 
+
+//console.log(b.toString());
+//console.log(parseInt(a,16));
