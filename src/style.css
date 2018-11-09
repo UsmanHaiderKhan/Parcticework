@@ -11,7 +11,10 @@ input {
     margin: 8px 0px;
     padding: 8px;
     box-sizing: border-box;
+    transition: .3s;
+}
 
-
-
+input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
 }
