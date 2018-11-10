@@ -542,3 +542,20 @@
 
 // console.log(window.location);
 //window.open("https://www.google.com/");
+
+
+//Find the Location of the given path
+
+// console.log(location.pathname);
+// console.log(location.location(true));
+
+//Now we deal with the DOM
+
+// console.log(document);
+// console.log(document.URL);
+// console.log(document.title);
+// console.log(document.body);
+// console.log(document.body.children);
+// console.log(document.body.children[0].textContent);
+// console.log(document.body.children[0].textContent = "usman haider khan");
+document.body.children[0].style.backgroundColor = 'red';
