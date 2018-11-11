@@ -558,4 +558,11 @@
 // console.log(document.body.children);
 // console.log(document.body.children[0].textContent);
 // console.log(document.body.children[0].textContent = "usman haider khan");
-document.body.children[0].style.backgroundColor = 'red';
+
+// document.body.children[0].style.backgroundColor = 'red';
+//console.log(document.body.lastElementChild);
+
+
+console.log(document.getElementsByTagName('li'));
+console.log(document.getElementById('li'));
+console.log(document.getElementsByClassName('li'));
