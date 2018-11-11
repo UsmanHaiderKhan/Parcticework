@@ -562,7 +562,12 @@
 // document.body.children[0].style.backgroundColor = 'red';
 //console.log(document.body.lastElementChild);
 
+//Way of Accessing Html Elements
 
-console.log(document.getElementsByTagName('li'));
-console.log(document.getElementById('li'));
-console.log(document.getElementsByClassName('li'));
+// console.log(document.getElementsByTagName('li'));
+// console.log(document.getElementById('li'));
+// console.log(document.getElementsByClassName('li'));
+
+// Selecting an Element through Query Selector
+
+console.log(document.querySelector('ul'));
