@@ -569,5 +569,26 @@
 // console.log(document.getElementsByClassName('li'));
 
 // Selecting an Element through Query Selector
+console.log("usman khan");
+// document.querySelector('#big').style.background = 'red';
+// document.querySelector('a').style.backgroundColor = 'red';
+// [1].style.backgroundColor = "red";
+// var y = document.querySelector("#big").firstElementChild.textContent = "Usman What are Doing";
+// console.log(y);
 
-console.log(document.querySelector('ul'));
+
+//Inserting New Elements
+var prop = document.createElement('P');
+prop.textContent = 'Usman hello';
+prop.style.fontSize = 12;
+
+var li = document.querySelector('li');
+var a = li.firstElementChild;
+
+li.appendChild(prop);
+li.insertBefore(prop, a); //insert it before the prop
+
+
+var a = document.querySelectorAll('a')[1];
+a.remove();
+a.parentElement.removeChild(a);
