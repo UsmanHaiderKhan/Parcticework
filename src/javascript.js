@@ -589,6 +589,32 @@ console.log("usman khan");
 // li.insertBefore(prop, a); //insert it before the prop
 
 
-var a = document.querySelectorAll('a')[1];
-a.parentNode.removeChild(a);
-console.log(confirm(a));
+// var a = document.querySelectorAll('a')[1];
+// a.parentNode.removeChild(a);
+// console.log(confirm(a));
+
+//Event Handler
+
+//this is on click listener
+
+var btn = document.querySelector('button');
+// btn.onclick = function () {
+//     console.log("You Clicked ME");
+// }
+
+
+btn.addEventListener('click', listener1);
+btn.addEventListener('click', listener2);
+
+setTimeout(function () {
+    btn.removeEventListener('click', listener1);
+}, 2000);
+
+function listener1() {
+
+    console.log("Usman Listen Me");
+}
+
+function listener2() {
+    console.log("usman you did'nt Listen Me");
+}
