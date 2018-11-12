@@ -578,17 +578,17 @@ console.log("usman khan");
 
 
 //Inserting New Elements
-var prop = document.createElement('P');
-prop.textContent = 'Usman hello';
-prop.style.fontSize = 12;
+// var prop = document.createElement('P');
+// prop.textContent = 'Usman hello';
+// prop.style.fontSize = 12;
 
-var li = document.querySelector('li');
-var a = li.firstElementChild;
+// var li = document.querySelector('li');
+// var a = li.firstElementChild;
 
-li.appendChild(prop);
-li.insertBefore(prop, a); //insert it before the prop
+// li.appendChild(prop);
+// li.insertBefore(prop, a); //insert it before the prop
 
 
 var a = document.querySelectorAll('a')[1];
-a.remove();
-a.parentElement.removeChild(a);
+a.parentNode.removeChild(a);
+console.log(confirm(a));
