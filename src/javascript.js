@@ -618,3 +618,18 @@ function listener1() {
 function listener2() {
     console.log("usman you did'nt Listen Me");
 }
+
+
+var inner = document.querySelector('#inner');
+var outer = document.querySelector('#outer');
+
+outer.addEventListener('click', outerlisterner);
+inner.addEventListener("click", innerlisterner);
+
+function outerlisterner(event) {
+    console.log("you clicked on outer Listener");
+}
+//#endregion
+function innerlisterner(event) {
+    console.log("you Clicked the innner Lister ner");
+}
