@@ -623,7 +623,7 @@ function listener2() {
 var inner = document.querySelector('#inner');
 var outer = document.querySelector('#outer');
 
-outer.addEventListener('click', outerlisterner);
+outer.addEventListener('click', outerlisterner, true);
 inner.addEventListener("click", innerlisterner);
 
 function outerlisterner(event) {
