@@ -627,6 +627,9 @@ outer.addEventListener('click', outerlisterner);
 inner.addEventListener("click", innerlisterner);
 
 function outerlisterner(event) {
+    console.log(event.clientX, event.clientY);
+    event.stopPropagation();
+    event.target.style.backgroundColor = 'red';
     console.log("you clicked on outer Listener");
 }
 //#endregion
