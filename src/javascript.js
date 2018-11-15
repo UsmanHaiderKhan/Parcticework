@@ -597,42 +597,42 @@ console.log("usman khan");
 
 //this is on click listener
 
-var btn = document.querySelector('button');
+//var btn = document.querySelector('button');
 // btn.onclick = function () {
 //     console.log("You Clicked ME");
 // }
 
 
-btn.addEventListener('click', listener1);
-btn.addEventListener('click', listener2);
+// btn.addEventListener('click', listener1);
+// btn.addEventListener('click', listener2);
 
-setTimeout(function () {
-    btn.removeEventListener('click', listener1);
-}, 2000);
+// setTimeout(function () {
+//     btn.removeEventListener('click', listener1);
+// }, 2000);
 
-function listener1() {
+// function listener1() {
 
-    console.log("Usman Listen Me");
-}
+//     console.log("Usman Listen Me");
+// }
 
-function listener2() {
-    console.log("usman you did'nt Listen Me");
-}
+// function listener2() {
+//     console.log("usman you did'nt Listen Me");
+// }
 
 
-var inner = document.querySelector('#inner');
-var outer = document.querySelector('#outer');
+// var inner = document.querySelector('#inner');
+// var outer = document.querySelector('#outer');
 
-outer.addEventListener('click', outerlisterner, true);
-inner.addEventListener("click", innerlisterner);
+// outer.addEventListener('click', outerlisterner, true);
+// inner.addEventListener("click", innerlisterner);
 
-function outerlisterner(event) {
-    console.log(event.clientX, event.clientY);
-    event.stopPropagation();
-    event.target.style.backgroundColor = 'red';
-    console.log("you clicked on outer Listener");
-}
+// function outerlisterner(event) {
+//     console.log(event.clientX, event.clientY);
+//     event.stopPropagation();
+//     event.target.style.backgroundColor = 'red';
+//     console.log("you clicked on outer Listener");
+// }
 //#endregion
-function innerlisterner(event) {
-    console.log("you Clicked the innner Lister ner");
-}
+// function innerlisterner(event) {
+//     console.log("you Clicked the innner Lister ner");
+// }
