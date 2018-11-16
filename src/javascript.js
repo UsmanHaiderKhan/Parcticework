@@ -642,13 +642,15 @@ console.log("usman khan");
 // Noe We Done the all the Http Request Code 
 var http = new XMLHttpRequest();
 var url = "some url are here/posts";
-var method = "GET";
+var method = "GET"; //POST
+var data = 'title=post%20title&body=Body';
+http.setRequestHeader('Content-Type', 'application/x-www-form- urlencoded');
 http.open(method, url);
 http.onreadystatechange = function () {
-    if (http.readyState === this.DONE && http.status === 200) {
+    if (http.readyState === this.DONE && http.status === 201) {
         console.log(JSON.parse(http.responseText)[0].id);
     } else if (http.readyState === this.DONE && http.status !== 200) {
         console.log("Error");
     }
 }
-http.send();
+http.send(data);
