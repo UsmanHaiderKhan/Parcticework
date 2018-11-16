@@ -642,7 +642,7 @@ console.log("usman khan");
 // Noe We Done the all the Http Request Code 
 var http = new XMLHttpRequest();
 var url = "some url are here/posts";
-var method = "GET"; //POST
+var method = "POST"; //GET
 var data = 'title=post%20title&body=Body';
 http.setRequestHeader('Content-Type', 'application/x-www-form- urlencoded');
 http.open(method, url);
