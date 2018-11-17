@@ -640,17 +640,28 @@ console.log("usman khan");
 
 
 // Noe We Done the all the Http Request Code 
-var http = new XMLHttpRequest();
-var url = "some url are here/posts";
-var method = "POST"; //GET
-var data = 'title=post%20title&body=Body';
-http.setRequestHeader('Content-Type', 'application/x-www-form- urlencoded');
-http.open(method, url);
-http.onreadystatechange = function () {
-    if (http.readyState === this.DONE && http.status === 201) {
-        console.log(JSON.parse(http.responseText)[0].id);
-    } else if (http.readyState === this.DONE && http.status !== 200) {
-        console.log("Error");
-    }
+// var http = new XMLHttpRequest();
+// var url = "some url are here/posts";
+// var method = "POST"; //GET
+// var data = 'title=post%20title&body=Body';
+// http.setRequestHeader('Content-Type', 'application/x-www-form- urlencoded');
+// http.open(method, url);
+// http.onreadystatechange = function () {
+//     if (http.readyState === this.DONE && http.status === 201) {
+//         console.log(JSON.parse(http.responseText)[0].id);
+//     } else if (http.readyState === this.DONE && http.status !== 200) {
+//         console.log("Error");
+//     }
+// }
+// http.send(data);
+
+//Proper App Code
+
+
+
+
+search_Button.addEventListener('click', searchWeather);
+
+function searchWeather() {
+    console.log(searchCity.value);
 }
-http.send(data);
