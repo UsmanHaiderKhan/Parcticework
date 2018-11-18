@@ -664,4 +664,26 @@ search_Button.addEventListener('click', searchWeather);
 
 function searchWeather() {
     console.log(searchCity.value);
+    var cityName = searchCity.value;
+    if (cityName.trim().lenght == 0) {
+        return alert('please enter a valid city name');
+    }
+    var http = new XMLHttpRequest();
+    var apikey = '1f630ef81159132ae0101b24851e5f6e';
+    var url = 'api.openweathermap.org/data/2.5/weather?q=' + cityName + '&units=metrics&appid=' + apikey;
+    var method = "GET";
+    http.open(url, method);
+    http.onreadystatechange = function () {
+        if (http.readyState == XMLHttpRequest.DONE && http.status === 200) {
+            weatherData.temprature = data.temp;
+            var data = JSON.parse(http.responseText);
+            var weatherData = new Weather(cityName, data.weather[0].description.toUpperCase());
+            console.log(weatherData);
+        } else if (http.readyState === XMLHttpRequest.DONE) {
+            alert("Some Thing Went Going Wrong");
+        }
+    };
+    http.send();
+
+
 }
