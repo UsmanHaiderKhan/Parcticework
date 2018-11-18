@@ -663,6 +663,8 @@ console.log("usman khan");
 search_Button.addEventListener('click', searchWeather);
 
 function searchWeather() {
+    loadText.style.display = 'block';
+    weatherBox.style.display = 'none'
     console.log(searchCity.value);
     var cityName = searchCity.value;
     if (cityName.trim().lenght == 0) {
@@ -678,12 +680,21 @@ function searchWeather() {
             weatherData.temprature = data.temp;
             var data = JSON.parse(http.responseText);
             var weatherData = new Weather(cityName, data.weather[0].description.toUpperCase());
+            UpdateWeather(weatherData);
             console.log(weatherData);
         } else if (http.readyState === XMLHttpRequest.DONE) {
             alert("Some Thing Went Going Wrong");
         }
     };
     http.send();
+}
+
+function UpdateWeather(weatherData) {
+    weatherCity.textContent = weatherData.cityName;
+    weatherDescription.textContent = weatherData.description;
+    weatherTemprature.textContent = weatherData.temprature;
 
 
+    loadText.style.display = 'none';
+    weatherBox.style.display = 'block'
 }
